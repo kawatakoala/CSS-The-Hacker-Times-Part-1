@@ -1,65 +1,81 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto+Slab:wght@500&family=Source+Sans+Pro:wght@200;400;600&display=swap');
 
 body {
-    background-color: #eee;
-    font-family: 'Source Sans Pro', sans-serif;
+    background: #eee;
+    font-family: 'Source Sans Pro';
 }
 
-.newspaper-container {
-    background-color: white;
-    border-radius: 0.5em;
-    box-shadow: 1px 1px 1px 1px #ddd;
-    padding: 20px;
-    width: 700px;
+h1 {
+    font-family: 'Abril Fatface';
+    text-align: center;
 }
 
-.date {
-    text-align: left;
+nav {
+    position: sticky;
+    top:0px;
+    bottom:0px;
+    background: white;
+}
+
+nav li {
+    list-style-type: none;
+    margin: 0;
+    padding: 5px;
+    display: inline-block;
+    color: #777;
+}
+
+a:link {
+    text-decoration: none;
+    color: #777;
+}
+
+a {
+    color: inherit;
+}
+
+nav ul {
+    border-top: solid 1px #777;
+    border-bottom: solid 1px #777;
+    padding: 10px;
+    color:#777;
+}
+
+h2, h4 {
+    font-family: 'Roboto Slab';
 }
 
 h5 {
     color: #dd3232;
-}
-
-h1 {
-    font-family: 'Abril Fatface', sans-serif;
-    font-size: 3em;
-    text-align: center;
+    font-family: 'Abril Fatface';
 }
 
 main {
-    font-family: 'Roboto Slab', serif;
-    text-align: justify;
+    border-bottom: solid 1px #777;
+    padding-bottom: 10px;
 }
 
-main img {
-    width: auto;
+#laptop {
+    display: block;
+    width: 100%;
 }
 
-.more-articles {
-    border-top: 10px rgb(222, 12, 12);
+.newspaper-container {
+    background: white;
+    box-shadow: 0.1em 0.1em 10px #ddd;
+    width: 700px;
+    padding: 1.5em;
+    border-radius: 10px;
+    margin: 3em auto;
+}
+
+.more-articles section {
     display: inline-block;
-    padding: 5px;
-    text-align: justify;
     width: 300px;
+    margin: 0px 20px 0px 20px;
 }
 
-nav ul {
-    list-style-type: none;
-    text-align: center;
-}
-
-nav li {
-    display: inline-block;
-    padding: 0.5em;
-}
-
-nav a {
-    text-decoration: none;
-    font-size: 0.9em;
-    color: #777;
-}
-
-nav a:hover {
-    color: black;
+p {
+    padding: 0 10px;
+    text-align: justify;
 }
